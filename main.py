@@ -11,7 +11,6 @@ def main(url):
         child = child.findNextSibling()
     return output
 
-sponsor = "Pro-tip: Use the Wealthsimple Trade app to start online trading and get a free $25 bonus using our referral link: 'XXX'. \n"
 def businessNews():
     return(main("https://www.cnbc.com/id/10001147/device/rss/rss.html") + sponsor)
     
@@ -55,6 +54,7 @@ def esgNews():
 
 
 if __name__ == "__main__":
+    sponsor = "Pro-tip: Use the Wealthsimple Trade app to start online trading and get a free $25 bonus using our referral link: 'XXX'. \n"
     print(businessNews())
     print(worldNews())
     print(topNews()) 
